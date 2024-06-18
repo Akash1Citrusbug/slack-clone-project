@@ -1,0 +1,162 @@
+html {
+    font-size: 16px;
+    color: #000;
+    font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3.125rem;
+    margin: 0.67em 0;
+    --color: #e01e5a;
+    --prefix: 'ERROR: ';
+    font-family: Slack-Larsseit, 'Helvetica Neue', Helvetica, 'Segoe UI',
+        Tahoma, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+}
+
+:root {
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    --sidebar-color: #400d40;
+    --sidebar-highlight-color: #1264a3;
+    --attachment-color: #000;
+    --more-count: '+1';
+}
+
+nav {
+    background-color: white;
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+
+}
+
+#slack-logo {
+    width: 125px;
+    width: "100";
+    height: "37";
+}
+
+#nav_search_btn {
+    background-color: transparent;
+}
+
+#nav-spacing-initial {
+    width: 200px;
+}
+
+#nav-talk-to-sales {
+    border-color: #611f69 !important;
+    color:#611f69 !important;
+}
+
+#nav-get-started {
+    background-color: #611f69;
+    color: white !important;
+    border-color: #611f69 !important;
+    
+}
+
+div ul li a {
+    color: #1d1d1d !important;
+    font-weight: 700;
+    font-size: 9.375rem;
+    font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+.margin-top-flush {
+    margin-top: 0rem !important;
+}
+
+@media screen and (min-width: 64rem) {
+    h1 {
+        font-size: 3.125rem;
+    }
+}
+
+.nav-font-adjust{
+    
+        padding: .25rem .75rem;
+        font-size: .9375rem;
+    
+}
+
+.button{
+    
+    display: inline-block !important; 
+    width: auto !important;
+        font-weight: 700;
+        line-height: 1.2857;
+        letter-spacing: .8px;
+        font-size: .875rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 19px 40px 20px !important;
+        display: block;
+        width: 100%;
+        transition: box-shadow 420ms cubic-bezier(.165,.84,.44,1), color 420ms cubic-bezier(.165,.84,.44,1), background 420ms cubic-bezier(.165,.84,.44,1) !important;
+    
+}
+
+.button:hover{
+    background-color: #4a154b !important;
+    border-color: #4a154b !important;
+}
+
+.nav-get-started:hover{
+    background-color: #4a154b !important;
+    border-color: #4a154b !important;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+/* @media screen and (min-width: 67.8125rem) {
+     
+}#first-nav-bar{
+        border-radius: 50px !important;
+        margin-top: .5rem !important;
+        padding: 0 2.225rem !important;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, .15) !important;
+    } */
+
+
+.c-logo-bar__item{
+    margin: 22px;
+}
+
+ul li{
+    display:flex;
+    align-items: center;
+}
+
+nav{
+    animation-name: myAnimation;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+}
+
+@keyframes myAnimation {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+
+    }
+  }
