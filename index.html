@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Slack is your productivity platform | Slack</title>
+	<link id="favicon" rel="shortcut icon" href="https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png"
+		sizes="16x16 32x32 48x48" type="image/png">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 	<link rel="stylesheet" href="/assets/CSS/style.css" />
@@ -14,9 +16,9 @@
 <body>
 	<!--Navbar start-->
 
-	<div class="container sticky-top">
-		<nav id="first-nav-bar" style="border-radius: 50px !important; padding-left: 23px; padding: 15px;" class="navbar sticky-top navbar-expand-lg fs-6 fw-bold"  aria-label="primary navigation">
-			<div class="container-fluid" >
+	<div id="main-nav-div" class="container">
+		<nav id="first-nav-bar" class="navbar sticky-top navbar-expand-lg fs-6 fw-bold" aria-label="primary navigation">
+			<div class="container-fluid">
 				<a id="slack-logo" class="navbar-brand" href="index.html">
 					<img src="/assets/Images/slack-navbar-log.png" alt="slack logo" width="100" height="37" />
 				</a>
@@ -77,7 +79,7 @@
 							<a class="nav-link nav-font-adjust" aria-disabled="true">Pricing</a>
 						</li>
 						<div class="col-xs-12" id="nav-spacing-initial"></div>
-						<button id="nav_search_btn" class="border-0 btn-transparent" aria-label="Search"
+						<button id="nav_search_btn" class="border-0 bg-transparent btn-transparent" aria-label="Search"
 							data-clog-click="" data-clog-ui-element="btn_search"
 							data-clog-ui-component="inc_workspace_nav" tabindex="0">
 							<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -89,12 +91,12 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">Sign in</a>
 						</li>
-						<div class="col-xs-12" style="width: 30px"></div>
+						<div class="col-xs-12 wd-30"></div>
 						<li class="nav-item">
 							<a id="nav-talk-to-sales" class="nav-link text-uppercase border rounded-1" href="#">Talk to
 								sales</a>
 						</li>
-						<div class="col-xs-12" style="width: 25px"></div>
+						<div class="col-xs-12 wd-25"></div>
 						<li class="nav-item">
 							<a id="nav-get-started" class="nav-link text-uppercase border rounded-1" href="#">Get
 								Started</a>
@@ -110,20 +112,16 @@
 	<div class="container ">
 		<div class="position-relative p-3 text-center text-muted bg-body">
 			<h1 class="text-body-emphasis font-weight-bold">
-				Made for people.<span style="color: #611f69">
+				Made for people.<span class="custom-font-purple">
 					Built for productivity.
 				</span>
 			</h1>
 
-			<div class="">
-				<a style="
-              background-color: #611f69;
-              color: white;
-              border-color: #611f69 !important;
-              padding: 10px;
-            " class="text-uppercase border rounded-1 button" href="#">Get Started</a>
-				<p class="u-margin-top--medium u-margin-bottom--flush"
-					style="margin-top: 16px; margin-bottom: 0px;color: black;"><strong>Slack is free
+			<div>
+				<a id="home-get-started-btn"
+				 class="text-uppercase border rounded-1 button custom-bg-purple custom-border-purple" href="#">Get
+					Started</a>
+				<p class="slack-free-try u-margin-top--medium u-margin-bottom--flush"><strong>Slack is free
 						to try</strong> for as long as you like</p>
 			</div>
 		</div>
@@ -132,166 +130,190 @@
 
 
 	<div class="d-flex flex-row justify-content-center" style="justify-content: space-around;">
-			<div class="c-logo-bar__item"><img style="margin-top: 9px;" alt="Airbnb" height="auto" width="auto" loading="lazy"
-					class="lazyload"
-					data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png"
-					data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small@2x.png 2x"
-					src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png"
-					srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small@2x.png 2x">
-			</div>
+		<div class="c-logo-bar__item"><img style="margin-top: 9px;" alt="Airbnb" height="auto" width="auto"
+				loading="lazy" class="lazyload"
+				data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png"
+				data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small@2x.png 2x"
+				src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png"
+				srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small@2x.png 2x">
+		</div>
 
-			<div class="c-logo-bar__item"><img style="margin-top: 0px;" alt="NASA" height="auto" width="auto" loading="lazy" class="lazyload"
-					data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png"
-					data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small@2x.png 2x"
-					src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png"
-					srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small@2x.png 2x">
-			</div>
+		<div class="c-logo-bar__item"><img style="margin-top: 0px;" alt="NASA" height="auto" width="auto" loading="lazy"
+				class="lazyload"
+				data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png"
+				data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small@2x.png 2x"
+				src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png"
+				srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small@2x.png 2x">
+		</div>
 
-			<div class="c-logo-bar__item"><img style="margin-top: 12px;" alt="Uber" height="auto" width="auto" loading="lazy" class="lazyload"
-					data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png"
-					data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png 1x, https://a.slack-edge.com/9df734f/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small@2x.png 2x"
-					src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png"
-					srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png 1x, https://a.slack-edge.com/9df734f/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small@2x.png 2x">
-			</div>
-			<div class="c-logo-bar__item"><img style="margin-top: 4px;" alt="Target" height="auto" width="auto" loading="lazy"
-					class="lazyload"
-					data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png"
-					data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small@2x.png 2x"
-					src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png"
-					srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small@2x.png 2x">
-			</div>
-			<div class="c-logo-bar__item"><img style="margin-top: 8px;" alt="New York Times" height="auto" width="auto" loading="lazy"
-					class="lazyload"
-					data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png"
-					data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small@2x.png 2x"
-					src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png"
-					srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small@2x.png 2x">
-			</div>
-			<div class="c-logo-bar__item"><img style="margin-top: 12px;" alt="Etsy" height="auto" width="auto" loading="lazy" class="lazyload"
-					data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png"
-					data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small@2x.png 2x"
-					src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png"
-					srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small@2x.png 2x">
-			</div>
+		<div class="c-logo-bar__item"><img style="margin-top: 12px;" alt="Uber" height="auto" width="auto"
+				loading="lazy" class="lazyload"
+				data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png"
+				data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png 1x, https://a.slack-edge.com/9df734f/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small@2x.png 2x"
+				src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png"
+				srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png 1x, https://a.slack-edge.com/9df734f/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small@2x.png 2x">
+		</div>
+		<div class="c-logo-bar__item"><img style="margin-top: 4px;" alt="Target" height="auto" width="auto"
+				loading="lazy" class="lazyload"
+				data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png"
+				data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small@2x.png 2x"
+				src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png"
+				srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small@2x.png 2x">
+		</div>
+		<div class="c-logo-bar__item"><img style="margin-top: 8px;" alt="New York Times" height="auto" width="auto"
+				loading="lazy" class="lazyload"
+				data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png"
+				data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small@2x.png 2x"
+				src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png"
+				srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small@2x.png 2x">
+		</div>
+		<div class="c-logo-bar__item"><img style="margin-top: 12px;" alt="Etsy" height="auto" width="auto"
+				loading="lazy" class="lazyload"
+				data-src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png"
+				data-srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small@2x.png 2x"
+				src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png"
+				srcset="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png 1x, https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small@2x.png 2x">
+		</div>
 	</div>
 
 
 
 
 
+	<!--first video content on the home page-->
+
+	<div class="" style="display: grid; grid-template-columns: 1fr auto 1fr;">
+		<div style="display: grid; grid-template-rows: 1fr 1fr;">
+			<div></div>
+			<div class="custom-bg-color">
+
+			</div>
+		</div>
+		<div id="first-video-content" class="text-center custom-bg-color">
+			<video autoplay muted loop height="544" width="900" title="Team discussing work in the Slack app"
+				poster="https://a.slack-edge.com/0cedc3b/marketing/img/homepage/true-prospects/hero-revamp/static/hero@2x.IN.jpg">
+				<source
+					src="https://a.slack-edge.com/0cedc3b/marketing/img/homepage/true-prospects/hero-revamp/animation/hero@2x.IN.webm"
+					type="video/webm">
+				<source
+					src="https://a.slack-edge.com/0cedc3b/marketing/img/homepage/true-prospects/hero-revamp/animation/hero@2x.IN.mp4"
+					type="video/mp4">
+			</video>
+		</div>
+		<div style="display: grid; grid-template-rows: 1fr 1fr;">
+			<div></div>
+			<div class="custom-bg-color">
+
+			</div>
+		</div>
+	</div>
+
+	<!--checkpoint  1-->
 
 
 
+	<div class="custom-bg-color">
+		<div class="custom-bg-color" style="height: 85px;"></div>
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet atque minus vel, numquam tempora architecto distinctio nihil officia quam quasi autem. Dignissimos, inventore perferendis. Assumenda laudantium quae ullam aperiam molestias.
-Beatae vero consectetur ut, sequi distinctio corrupti totam quibusdam illum perspiciatis et, repellendus accusamus, aspernatur dolor autem eum deserunt. Sint natus cum reiciendis nemo obcaecati, rem nobis accusantium laboriosam deleniti.
-Commodi minus quasi quo magni officiis modi repellat nisi, nam corporis quam, aperiam tenetur vitae optio odio obcaecati! Ipsum architecto necessitatibus culpa maxime non beatae dolorum maiores ipsa dolorem corporis?
-Quos officia nemo amet et voluptatibus quia quibusdam ex veritatis nobis omnis dolores inventore repellat cumque perspiciatis officiis explicabo laborum, doloribus veniam. Harum labore illo earum voluptatibus dolorem sequi veniam.
-Cum soluta fuga doloremque rem est, laudantium consequuntur, quasi omnis facilis distinctio quod provident obcaecati libero. Blanditiis laboriosam laudantium ipsa accusantium quod animi! Earum voluptates adipisci voluptate, eos doloremque fugiat!
-Blanditiis perspiciatis exercitationem repellat tempore in recusandae odio tenetur at architecto, quisquam culpa minus eos similique, quaerat officiis quae! Id quam eos hic, natus aspernatur tempora voluptatum doloribus consectetur autem.
-Esse quaerat magni nam vel animi maiores suscipit rem dignissimos, odio odit officiis, delectus officia, earum saepe perspiciatis voluptatem. Placeat id cupiditate ratione laboriosam fugit eaque, porro provident accusantium unde.
-Veritatis asperiores sed fugit est facilis dolore dolores vel sunt pariatur accusantium cupiditate neque perferendis, eveniet quidem illum ratione unde laboriosam nam quaerat soluta expedita. Nesciunt sit dolores natus rem.
-Inventore excepturi sequi obcaecati praesentium officia reprehenderit dignissimos! Delectus quod tenetur temporibus, animi nobis possimus dolorem. Quam itaque, obcaecati pariatur nihil atque cumque maiores. Et voluptatem fugit dolorem atque illum.
-Fugiat alias quos maiores quis labore, asperiores atque magnam cum laborum, amet nisi ab iure. Iste nobis ut autem, animi eius quasi laboriosam explicabo repellat, quaerat laudantium temporibus dolore totam.
-Eveniet aspernatur, architecto quia recusandae maxime explicabo? Maxime officia perspiciatis impedit? Iure recusandae mollitia culpa sed eveniet? Inventore, nostrum nihil recusandae repellat neque illum repudiandae sed voluptatem fuga in ea.
-Veritatis in, quisquam quam exercitationem veniam iusto quia doloribus? Id eligendi cumque quibusdam aspernatur eos modi explicabo velit deserunt beatae repellendus! Tempora, porro? Dolorem aliquid nulla magnam eius rerum accusamus?
-Velit architecto fuga ut tempore nisi qui dolores? Quasi molestias aut distinctio. Tenetur, non minus! Nihil, culpa earum similique rem illum odit molestiae quaerat cumque eligendi deserunt sit ipsum magnam?
-Exercitationem, natus sint. Molestiae ullam veritatis minus sint repudiandae corrupti officiis delectus impedit cum aperiam tenetur quae, illo sit ipsam voluptates culpa magni iste laboriosam expedita facilis maxime voluptatibus. Rem.
-Aliquam, fugiat provident? Sed distinctio sint sapiente accusamus dicta facilis, nam dolorum doloremque quibusdam ratione, amet blanditiis nisi temporibus deleniti error perspiciatis dolore est ad magnam possimus numquam fuga! Dolorum!
-Officia nobis iste numquam incidunt. Accusantium alias distinctio beatae tempore inventore explicabo et omnis? Quod minima, ex ipsam numquam tempore veritatis in quo non eos sit molestiae temporibus facere quasi.
-Veritatis eius blanditiis sunt culpa iste quos distinctio sapiente, eveniet animi, ducimus a, facilis deleniti quaerat pariatur hic ex? Provident quas, praesentium porro modi adipisci autem unde quae facilis voluptatem.
-Numquam vel, laborum saepe nobis expedita perferendis optio consequatur cumque temporibus provident aperiam mollitia natus fuga nostrum, autem in quod? Deleniti voluptates ullam illo nemo, quos perferendis ab necessitatibus harum.
-Consequuntur pariatur, quam blanditiis perferendis sit quasi ducimus quas ipsa soluta suscipit necessitatibus magnam accusantium corrupti accusamus odio! At odit aut ipsum dolore, modi nihil quibusdam mollitia beatae esse molestiae!
-Sapiente, laborum? Repellat quibusdam possimus incidunt soluta iusto quidem illo voluptatibus dolores reprehenderit! Magnam culpa quo voluptatibus, veritatis maxime minima, expedita unde est incidunt in alias doloribus tempore repellat id!
-Ea quos modi, aspernatur explicabo nisi perferendis molestias, accusantium eos amet iusto quibusdam voluptatum aperiam repellendus laudantium asperiores ipsum quis fugit eum consectetur consequatur. Necessitatibus animi velit deserunt beatae alias.
-Voluptas veritatis nam tempora nemo placeat id adipisci sunt, saepe suscipit quod incidunt beatae vel modi, alias commodi libero optio voluptatum voluptates amet hic esse repellat nostrum at labore? Harum.
-Accusantium delectus consequuntur nostrum? Labore magnam consectetur quae qui nulla nobis, quod reprehenderit quas dolorem et sequi voluptate temporibus! Nemo rerum maiores autem eligendi, repudiandae perferendis fugit iste alias sequi?
-Non voluptatibus eum quis perspiciatis aliquid. Maxime pariatur fuga commodi nobis doloribus, incidunt quae, minima quos corrupti debitis, saepe asperiores inventore facilis. Molestias quos velit vero! Fugiat tempora fugit nostrum.
-Possimus aperiam natus nihil fugit laboriosam quidem sed exercitationem. Explicabo provident ex quod placeat quaerat necessitatibus reiciendis expedita eos, corrupti quo veritatis, dolorem dolor aspernatur repellat maxime cumque sed tempora?
-Saepe nesciunt, alias quo iusto expedita quibusdam corrupti dicta, laboriosam recusandae maxime id magnam dolores maiores sed iure perferendis consectetur ratione eos. Ad, aliquid. Veniam numquam officia ipsam similique neque.
-Tempore magnam sequi impedit eligendi consequuntur, non nam consectetur dolor id rem obcaecati fugit modi, excepturi maiores neque repellat eos soluta! Natus cum quos soluta magnam enim animi? Harum, est?
-Voluptatibus beatae nesciunt distinctio quibusdam facere quisquam tenetur labore, a quidem, saepe quod, sunt blanditiis. Reprehenderit, accusantium! Itaque, quia atque? Ab similique laborum quidem perferendis id assumenda, voluptas nostrum repellat.
-Minima sunt optio blanditiis quae quasi aperiam officia, ipsam tempora quas quos dolorem suscipit cupiditate quam eum provident est. Aperiam ipsam totam accusantium sed distinctio soluta reprehenderit tempora quia! Reiciendis!
-Accusantium pariatur unde nam voluptatibus odio debitis beatae eveniet ab esse quo ducimus quidem amet ratione modi, quos facilis cumque cum ea dolorem sed tempore. At quisquam reiciendis aperiam minus.
-Culpa, velit? Ut distinctio adipisci, architecto, odit eligendi a dolore vel doloribus assumenda dolorem fugiat blanditiis excepturi nobis autem explicabo quidem. Voluptatibus ipsam officiis quisquam cumque libero suscipit necessitatibus. Iure!
-Nam deserunt, dolore doloremque tempore illo excepturi dolores quaerat officiis necessitatibus eos esse aspernatur sed nobis debitis ex laborum rem eum deleniti aut laboriosam est vitae similique repellat unde. Eum.
-Qui praesentium labore excepturi quo officia reiciendis maxime earum ad rerum neque consectetur incidunt, itaque cumque laudantium et tempore dicta dolorem eius temporibus ipsum ea officiis corrupti. Molestias, ex quaerat.
-Minus sunt, placeat commodi odio quas molestias mollitia iusto assumenda voluptatum iure architecto voluptatem enim sed obcaecati amet pariatur incidunt deleniti rem praesentium illum quisquam corrupti molestiae aperiam! Explicabo, maiores.
-Esse doloribus ad totam omnis excepturi debitis voluptates porro quas quaerat modi, aperiam sunt. Dicta, rerum autem. Ea consectetur vero mollitia est ex minima! Molestiae odio fugit nesciunt tempora est?
-Rem voluptatum delectus odit pariatur, aliquam natus, eligendi repudiandae quas minima nostrum perferendis, voluptate illum eum similique. Distinctio doloremque rerum reiciendis aperiam autem illo eius suscipit, sapiente ab. Ipsa, maiores!
-Veniam, tempora laudantium reiciendis perspiciatis assumenda architecto est eius dolores sed temporibus, necessitatibus itaque ducimus voluptate ratione porro perferendis! Ullam nisi ipsam velit possimus exercitationem fugit, iste perferendis accusamus tenetur.
-Aspernatur sed cupiditate maiores itaque odit obcaecati adipisci esse quos at, cumque dignissimos! Sapiente doloribus quisquam dicta perferendis error labore at aliquid qui iste ullam! Nemo tempore obcaecati fuga sit?
-Placeat ut libero hic eveniet dolorem, delectus et odio itaque labore est fugiat in nisi accusamus soluta cumque expedita numquam ab quod laborum nesciunt? Molestiae reiciendis error id ipsum ab?
-Totam amet eius impedit sunt modi mollitia veritatis harum adipisci quae dolorum. Nostrum incidunt, quaerat tempora ipsum culpa ad illum quo illo accusamus natus obcaecati. Illum eos blanditiis neque at.
-Repellat ipsam cum illum recusandae deserunt totam itaque nihil earum ipsa quas repellendus exercitationem similique quis eveniet repudiandae, necessitatibus odio ad? Mollitia explicabo aut unde error fugit expedita vero alias.
-Consequatur eum totam quod adipisci quia, iste officia voluptatum repellendus aspernatur veritatis recusandae atque sequi temporibus qui reprehenderit, quis similique cumque, quo illum accusamus tenetur saepe id odit? Ut, recusandae.
-Deleniti maxime vitae, reprehenderit sequi eos expedita provident earum tenetur repudiandae aut. Vitae tempore, adipisci quas aliquid dicta modi quia quae, iure quod quo excepturi nam in dolores quaerat. Veritatis.
-Alias assumenda mollitia in nemo omnis. Voluptatum ipsa nihil reprehenderit, id commodi minus dicta enim corrupti hic alias laudantium? Nulla, culpa quisquam. Beatae corrupti voluptatibus debitis? Delectus veritatis sequi nemo.
-Aliquid nulla soluta voluptatum, exercitationem neque nostrum labore laboriosam quam porro commodi eligendi dignissimos provident ex obcaecati deserunt possimus unde harum? Libero voluptatem aspernatur dolorem facilis facere quam provident iure?
-Delectus dolorem iusto, magni voluptatem voluptate perspiciatis deleniti voluptatibus inventore voluptates eaque sunt mollitia molestias dolores adipisci unde nam tempore repellendus itaque dolor facere, impedit eius earum eum. Voluptas, numquam.
-Cumque ratione molestias quo dolores sequi eos nesciunt repudiandae iusto ducimus quaerat, eveniet dolore cum. Tenetur praesentium iure, ipsa rem a non voluptas optio repudiandae. Velit tenetur rerum blanditiis autem.
-Enim reiciendis ratione tenetur harum impedit maiores distinctio, in deleniti unde saepe, repellendus esse consequuntur adipisci eos, officia vitae totam. Unde ipsam laudantium temporibus. Suscipit rerum debitis odio fugit est.
-Aliquam voluptate quae veniam nostrum blanditiis nulla nemo, corporis placeat alias recusandae! Et aspernatur nihil explicabo doloribus provident, quis fugit magni nostrum quae alias, ullam esse labore consectetur debitis totam?
-Magnam eos sequi sit eaque nostrum, excepturi ex doloribus sapiente ad molestiae possimus reiciendis nulla cum tempora veritatis sunt tenetur commodi dolore hic. Iure adipisci rerum suscipit dolorum doloremque at.
-Accusantium iure quod repellat nemo quasi laboriosam cum, ex cumque ullam ea iusto architecto nostrum facere et voluptate consequatur ipsum veniam quaerat sit dolor facilis. Modi saepe consequuntur id architecto.
-Molestias quibusdam natus corrupti voluptate dolorem voluptatum, impedit, reiciendis delectus deleniti pariatur ab fugit! Ullam vel eum qui fuga voluptates unde, eos nemo adipisci minus cupiditate porro voluptatum ut numquam.
-Sed cum saepe, aperiam consequatur id quaerat veritatis ratione quod veniam deserunt dolor, autem minima nemo eum architecto, porro consequuntur ducimus ab hic mollitia tempore nisi debitis. Labore, nesciunt quo?
-Voluptatum voluptatem at dolores nesciunt aliquam id laboriosam, perspiciatis doloremque eaque. Perspiciatis excepturi hic dolor asperiores totam illo molestias nobis illum minima unde, autem incidunt corporis cupiditate vero laboriosam maxime.
-Cum tenetur id, hic pariatur repellat vitae quia quaerat quae velit, culpa alias rem. Beatae porro odio architecto assumenda excepturi? Ullam eius iure quia recusandae vitae reiciendis. Debitis, facere ea.
-Quaerat delectus aspernatur quos temporibus architecto iusto ab at repellendus nostrum, aliquam distinctio vero dolorem labore id eaque ullam quia? Ea mollitia, quisquam recusandae deleniti labore esse corrupti excepturi architecto!
-Hic nulla sunt molestias necessitatibus nemo labore voluptatem magnam ullam reiciendis accusamus maiores ab corporis, aliquid nam tenetur iure ducimus accusantium facilis nostrum recusandae rerum at quasi. Repellat, deleniti eveniet.
-Asperiores ipsam iusto iure. Odit accusantium fugit ducimus vero consequuntur, harum asperiores nulla quibusdam cumque velit, quae ipsa quas adipisci omnis culpa magni voluptatem officiis. Voluptatum dignissimos neque non illum?
-Consectetur minima, tenetur quasi quas voluptatibus mollitia quia officiis sequi quidem, tempore accusamus, eaque corporis dolor hic sed fugiat numquam laudantium explicabo! Rerum, vero? Eligendi quia facilis modi corrupti accusamus?
-Illum, assumenda quisquam quae, libero sunt quasi tempora, consectetur est maxime ex placeat expedita at! Animi doloremque reiciendis enim tempora ut nemo! Deserunt quia quisquam quasi, rem soluta maxime aperiam!
-Rem beatae assumenda incidunt odio inventore vel a voluptatem quod deleniti commodi asperiores ipsum, maiores omnis officiis blanditiis. Modi illum quod earum ex architecto? Deserunt laborum voluptatem obcaecati officiis hic.
-Maxime sapiente optio maiores quasi cum! Necessitatibus repellat, laudantium nobis nulla odio atque, perspiciatis blanditiis reiciendis magnam soluta temporibus fugit. A commodi reprehenderit alias illo cumque sunt repellendus sint voluptatem.
-Repellat dolorum magni eveniet soluta voluptates alias. Aspernatur quod totam iure tenetur? Eaque exercitationem nihil soluta possimus sit earum! Saepe eaque voluptatem amet voluptates, ratione suscipit iste! Assumenda, obcaecati explicabo.
-Magnam eos maxime numquam sit ab perspiciatis dignissimos odit sint labore maiores ipsam, velit soluta illo quo, id amet. Perferendis voluptatum nam quis aperiam doloremque dolorem, mollitia repellendus harum error.
-Voluptates exercitationem officiis quos ipsam aut a libero numquam optio ipsa, quasi minima. Nemo fugit velit asperiores laboriosam perspiciatis. Nihil labore deserunt assumenda iste exercitationem quaerat harum vero sed dolore!
-Veritatis necessitatibus mollitia reprehenderit harum, at aspernatur soluta esse temporibus explicabo voluptatum ex adipisci recusandae blanditiis beatae totam voluptas itaque ut vero natus nisi. Repellendus doloribus nobis ut officiis similique?
-Pariatur autem odio placeat consectetur fuga veniam deleniti numquam impedit, dolor repellat illum iure culpa dolorem laborum vero, rem odit dolores reprehenderit ullam esse perspiciatis, maiores aliquid. Possimus, laboriosam assumenda.
-Doloremque consectetur necessitatibus vero porro exercitationem animi cupiditate, rerum, dolorum soluta ipsum quam possimus minima quaerat quod neque in! Quam, sint. Perferendis molestiae dicta aspernatur, quae consequuntur cumque suscipit aut!
-Iusto adipisci illo autem fugit, veritatis recusandae est totam facilis, alias, nobis quis voluptatum molestiae expedita! Asperiores quod placeat ea repellat vitae rem nesciunt fugiat. Porro, magni. Repudiandae, necessitatibus alias.
-Soluta porro, sequi adipisci maxime eum dignissimos consequuntur aliquam consequatur nemo, dicta sint! Deleniti, a doloremque? Cumque delectus fugit quod ratione expedita assumenda maiores, vero molestiae nulla impedit quas facilis?
-Laboriosam animi harum ullam, repellat sint blanditiis eligendi quaerat delectus, ipsa, obcaecati libero! Maxime voluptas voluptatem, tenetur quidem consequuntur necessitatibus architecto odit doloribus cupiditate ipsa! Facilis ex distinctio modi optio.
-Fugit, delectus quam reiciendis beatae consequatur suscipit eaque quia sed voluptatem ut aliquid totam mollitia cupiditate nobis ea, facilis minima soluta ducimus non, dolorum porro doloremque eligendi animi? Id, officia?
-Minus, est. Molestias nemo error quaerat perferendis adipisci! Omnis doloremque illum repudiandae quibusdam eveniet culpa, ea accusantium quae libero suscipit fuga nisi. Voluptas accusantium totam beatae error aliquid distinctio autem.
-Dignissimos, cupiditate fugiat veritatis porro adipisci consequuntur, nulla, quasi officia autem explicabo illo amet eveniet ad! Autem voluptates earum labore nulla molestiae. Qui illo voluptatum quasi nisi sequi officiis error.
-Quo aliquid id nostrum quaerat, totam vero? Ullam architecto tempora repudiandae laudantium iste dolorem dolores dolore nam minus, harum adipisci accusamus maiores quas distinctio sapiente quasi quo similique voluptates error.
-Explicabo quidem nisi ratione aliquam magnam sapiente maxime ad dolor. Recusandae similique vero eius voluptatem aliquid optio, veritatis accusamus deserunt numquam ab ut, atque labore suscipit, qui quia expedita a!
-Dolorum quas a reiciendis laudantium vitae aperiam quis assumenda dignissimos, architecto ab? Optio modi laboriosam error qui reiciendis nesciunt! Voluptatem itaque architecto maiores eius doloremque nisi deleniti iste hic ad.
-Necessitatibus non facere voluptatum quas itaque dolorem iusto ea porro enim pariatur nobis, doloremque iure eaque modi, animi officia qui. Consequuntur dolor deleniti tempore dolorem iure eaque tempora sed minima.
-Quibusdam reiciendis dolorum enim aspernatur iste consequuntur illo velit in sit sed. Quisquam laborum libero illum, qui, aliquam odio natus voluptas esse aperiam animi corrupti ipsum voluptates nostrum ab. Veniam?
-Soluta rem saepe nostrum excepturi, voluptas ea porro reprehenderit odit minus iste tempora alias suscipit, ullam perspiciatis. Minima dolor modi, ipsum sequi maxime porro, voluptas sit minus fugit laboriosam amet.
-Nobis doloribus molestiae dolor placeat, architecto debitis commodi, possimus inventore harum, illum ex. Nesciunt commodi ut ratione velit vero perspiciatis quasi? Dolor ullam corporis nisi! Rerum voluptatibus esse deserunt facere!
-Nobis quasi laborum soluta quibusdam tempora nostrum fugiat cupiditate officia. Ipsam suscipit sequi placeat, blanditiis porro quae, nisi, aspernatur hic culpa sapiente labore. Adipisci modi temporibus ad sequi, doloribus maxime.
-Ea, eveniet vero quae dignissimos cupiditate et, eius necessitatibus aut incidunt ut officia dolor cumque sed, fugit enim accusantium? Nobis, iste. Sapiente soluta consectetur eligendi nihil? Eius sint temporibus sunt.
-A laudantium quod quas enim voluptates minus inventore veniam molestiae est debitis laboriosam neque corrupti in nulla maiores modi, soluta molestias ullam facere minima quidem? Unde vitae inventore dolores provident.
-Delectus, magni repellat provident distinctio odit sapiente eaque consectetur quasi voluptates accusamus exercitationem in aspernatur necessitatibus et dolorum! Reiciendis culpa nihil obcaecati neque iusto doloremque accusamus laboriosam laudantium quisquam? Natus?
-Ipsum fugit quod itaque, deleniti odit est error nobis repudiandae in, beatae temporibus cumque eum rem recusandae nulla consequuntur laboriosam libero quae quaerat! Explicabo praesentium voluptatem aspernatur repellendus, sequi inventore!
-Animi, provident! Reprehenderit explicabo a, animi quas dolor, eligendi quae excepturi earum voluptates magnam consequatur, quo dolore porro saepe. Magni porro ab hic repellendus quidem, corporis nobis doloribus laudantium ipsum.
-Fugit mollitia nam facilis ut, voluptates aperiam quibusdam beatae qui temporibus pariatur distinctio! Earum molestiae quam fugiat sint, necessitatibus, excepturi facilis molestias nihil maiores, tempore explicabo tenetur harum reiciendis deleniti!
-Amet itaque placeat ex minus, quis eligendi quidem velit aliquid deleniti expedita tempore, ea dolores reprehenderit blanditiis minima molestias voluptates dolor rem a veniam facilis nisi repudiandae? Cum, possimus cumque?
-Soluta fugiat eaque quia, ullam fuga iusto est dicta odio aut officia laboriosam voluptatibus dolor magni deleniti, perferendis blanditiis minima animi molestias, quis aliquam labore saepe? Quia quidem cupiditate nulla!
-Minus animi incidunt cumque itaque beatae fugiat nesciunt, perspiciatis natus sequi ipsam nihil, maxime doloremque ad voluptate! Enim soluta qui libero, exercitationem laborum aliquam omnis ducimus culpa deserunt, quaerat suscipit!
-Necessitatibus harum, ut dolore modi ullam veniam aliquid molestias neque sapiente odit expedita ipsam commodi repellat incidunt laudantium esse possimus aliquam natus eligendi quam excepturi tempore dolorem. Nostrum, harum voluptate?
-Laborum alias, praesentium ipsum assumenda rerum at sunt! Itaque officiis eaque aperiam, optio, sunt nemo ullam veniam, vitae id molestiae incidunt ut quas facilis. Sunt enim rerum magni aliquid similique.
-Consectetur minima laboriosam repellat, consequuntur recusandae sapiente eius quam optio, reprehenderit quae, commodi voluptate officia expedita ipsam rerum incidunt deleniti qui omnis distinctio laudantium molestias culpa magni? Esse, maiores atque!
-Quaerat velit qui ducimus, inventore nesciunt adipisci asperiores dolorum animi porro! Tenetur cupiditate sequi ut mollitia. Quidem hic ullam sapiente est, soluta aperiam laudantium excepturi esse dicta. Soluta, excepturi maxime?
-Sapiente porro quaerat blanditiis cupiditate quas. Laudantium nisi voluptas labore fuga, voluptate sunt aliquam suscipit, officia deserunt esse impedit inventore aliquid repellendus ab. Repellendus harum sapiente placeat blanditiis illo voluptatum?
-Expedita itaque perferendis consequuntur natus nulla dolorem totam laborum eligendi mollitia, dolor qui consequatur voluptas doloremque reprehenderit unde facere. Ducimus facilis maxime atque accusantium adipisci exercitationem dolor, in nobis vel!
-Mollitia illo ad placeat recusandae labore, officia laborum? Dolor, praesentium tempora est voluptate, ipsam nostrum voluptatem perspiciatis illum aliquid dolorem neque quas recusandae incidunt tenetur delectus doloremque accusantium velit quidem.
-Blanditiis harum quaerat et non quidem iure molestiae veniam vel maiores quos deserunt inventore eius ut praesentium, eaque at amet odit saepe voluptate! Hic repellat ipsum eaque! Rerum, aliquid eius!
-Fugit laboriosam explicabo architecto voluptate impedit, maiores enim hic ea repudiandae id ipsum nobis expedita harum dolorem. Quaerat officia exercitationem quod, quo natus fugiat molestias magni iure? Quae, quos deserunt.
+		<div style="display: grid;grid-template-columns: auto auto;">
+			<div class="custom-bg-color" style="align-items: center;display: inline-flex;">
+				<div style="width: 337px;"></div>
+				<div><video height="346" width="600px" autoplay muted loop
+						title="Using the Workday integration to quickly file an expense report in the Slack app">
+						<source
+							src="https://a.slack-edge.com/445abcc/marketing/img/homepage/e2e-prospects/animations/webm/speed.IN.webm"
+							type="video/webm">
+						<source
+							src="https://a.slack-edge.com/445abcc/marketing/img/homepage/e2e-prospects/animations/mp4/speed.IN.mp4"
+							type="video/mp4">
+					</video></div>
+
+				<div style="height: auto;width: 130px;"></div>
+
+				<div style="width: 472px;">
+					<h2 style="font-weight: 700;">Move faster with your tools
+						in one place</h2>
+					<p style="font-weight: 400;">Automate away routine tasks with the power
+						of generative AI and simplify your workflow with all your favourite apps ready to go in Slack.
+					</p><a href="https://slack.com/intl/en-in/integrations">Learn more about the Slack platform</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
+	<!--checkpoint  2-->
 
 
+	<div class="custom-bg-color">
+		<div class="custom-bg-color" style="height: 85px;"></div>
+
+		<div style="display: grid;grid-template-columns: auto auto;">
+			<div class="custom-bg-color" style="align-items: center;display: inline-flex;">
+				<div style="width: 337px;"></div>
+
+				<div style="width: 472px;">
+					<h2 style="font-weight: 700;">Choose how you want to work</h2>
+					<p style="font-weight: 400;">In Slack, you’ve got all the flexibility to work
+						when, where and how it’s best for you. You can easily chat, send audio and video clips, or join
+						a huddle
+						to talk things through live.
+					</p><a href="https://slack.com/intl/en-in/integrations"
+						class="o-section--feature__link u-hide">Learn more about flexible communication</a>
+				</div>
+				<div style="height: auto;width: 130px;"></div>
+
+				<div><video height="346" width="600px" autoplay muted loop
+						title="A user starting a huddle and recording a video clip with the Slack app">
+						<source
+							src="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/webm/ia4-flexibility.IN.webm"
+							type="video/webm">
+						<source
+							src="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/mp4/ia4-flexibility.IN.mp4"
+							type="video/mp4">
+					</video></div>
+			</div>
+		</div>
+	</div>
 
 
+	<!--checkpoint  3-->
 
 
+	<div class="custom-bg-color">
+		<div class="custom-bg-color" style="height: 85px;"></div>
 
+		<div style="display: grid;grid-template-columns: auto auto;">
+			<div class="custom-bg-color" style="align-items: center;display: inline-flex;">
+				<div style="width: 337px;"></div>
+				<div><video height="346" width="600px" autoplay muted loop
+						title="Using the Workday integration to quickly file an expense report in the Slack app">
+						<source
+							src="https://a.slack-edge.com/445abcc/marketing/img/homepage/e2e-prospects/animations/webm/connectedness.IN.webm"
+							type="video/webm">
+						<source
+							src="https://a.slack-edge.com/445abcc/marketing/img/homepage/e2e-prospects/animations/mp4/connectedness.IN.mp4"
+							type="video/mp4">
+					</video></div>
+
+				<div style="height: auto;width: 130px;"></div>
+
+				<div style="width: 472px;">
+					<h2 style="font-weight: 700;">Bring your team together</h2>
+					<p style="font-weight: 400;">At the heart of Slack are channels: organised spaces
+						for everyone and everything that you need for work. In channels, it’s easier to connect across
+						departments,
+						offices, time zones and even other companies.
+					</p><a href="https://slack.com/intl/en-in/integrations">Learn more about channels</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--checkpoint  4-->
+
+	<h3 class="display-as-h1 u-text--center u-i18n-max-width--48rem">Teams large and small rely on Slack</h3>
 
 
 
@@ -302,6 +324,7 @@ Fugit laboriosam explicabo architecto voluptate impedit, maiores enim hic ea rep
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="/assets/JS/index.js"></script>
 </body>
 
