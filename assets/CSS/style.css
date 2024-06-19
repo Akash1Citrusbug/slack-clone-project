@@ -51,9 +51,7 @@ nav {
     height: "37";
 }
 
-#nav_search_btn {
-    background-color: transparent;
-}
+
 
 #nav-spacing-initial {
     width: 200px;
@@ -61,14 +59,21 @@ nav {
 
 #nav-talk-to-sales {
     border-color: #611f69 !important;
-    color:#611f69 !important;
+    color: #611f69 !important;
+}
+
+#nav-talk-to-sales:hover {
+
+    border: 2px solid #611f69 !important;
+
+
 }
 
 #nav-get-started {
     background-color: #611f69;
     color: white !important;
     border-color: #611f69 !important;
-    
+
 }
 
 div ul li a {
@@ -88,41 +93,43 @@ div ul li a {
     }
 }
 
-.nav-font-adjust{
-    
-        padding: .25rem .75rem;
-        font-size: .9375rem;
-    
+.nav-font-adjust {
+
+    padding: .25rem .75rem;
+    font-size: .9375rem;
+
 }
 
-.button{
-    
-    display: inline-block !important; 
+.button {
+
+    display: inline-block !important;
     width: auto !important;
-        font-weight: 700;
-        line-height: 1.2857;
-        letter-spacing: .8px;
-        font-size: .875rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 19px 40px 20px !important;
-        display: block;
-        width: 100%;
-        transition: box-shadow 420ms cubic-bezier(.165,.84,.44,1), color 420ms cubic-bezier(.165,.84,.44,1), background 420ms cubic-bezier(.165,.84,.44,1) !important;
-    
+    font-weight: 700;
+    line-height: 1.2857;
+    letter-spacing: .8px;
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 19px 40px 20px !important;
+    display: block;
+    width: 100%;
+    transition: box-shadow 420ms cubic-bezier(.165, .84, .44, 1), color 420ms cubic-bezier(.165, .84, .44, 1), background 420ms cubic-bezier(.165, .84, .44, 1) !important;
+
 }
 
-.button:hover{
+.button:hover {
     background-color: #4a154b !important;
     border-color: #4a154b !important;
 }
 
-.nav-get-started:hover{
+.nav-get-started:hover {
     background-color: #4a154b !important;
     border-color: #4a154b !important;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: inherit;
 }
 
@@ -136,27 +143,111 @@ div ul li a {
     } */
 
 
-.c-logo-bar__item{
+#first-nav-bar {
+    border-radius: 50px !important;
+    padding-left: 30px !important;
+    padding: 15px !important;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, .15) !important;
+}
+
+.shadow-effect{
+    
+    /* box-shadow: 0 4px 40px rgba(0, 0, 0, .15) ; */
+}
+
+.c-logo-bar__item {
     margin: 22px;
 }
 
-ul li{
-    display:flex;
+ul li {
+    display: flex;
     align-items: center;
 }
 
-nav{
+.animation-for-navbar {
     animation-name: myAnimation;
     animation-direction: alternate;
+    /* transition-duration: 500ms; */
+    /* transition-duration: 2s; */
+    /* transition-property: margin-top, color; */
     animation-timeline: scroll(block nearest);
+    /* animation-timeline: linear; */
+    /* animation-timeline: scroll(x self); */
+    /* animation-timeline: scroll(inline root); */
+     transition: transform 0.8s ease-in-out;
+
 }
 
 @keyframes myAnimation {
     from {
-      transform: translateY(0px);
+        transform: translateY(-100px);
     }
+
     to {
-        transform: translateY(20px);
+        transform: translateY(0px);
 
     }
-  }
+}
+
+.custom-bg-color{
+    background-color: #f4ede4 !important;
+}
+
+.custom-bg-purple{
+    background-color:#611f69 !important;
+}
+
+.custom-border-purple{
+    border-color: #611f69 !important;
+}
+
+.custom-font-purple{
+    color: #611f69;
+}
+
+.wd-25{
+    width: 25px;
+}
+
+.wd-30{
+    width: 30px;
+}
+
+#home-get-started-btn{
+    color: white;
+    padding: 10px;
+}
+
+.slack-free-try{
+    margin-top: 16px; margin-bottom: 0px;color: black;
+}
+
+.content-space-around{
+    justify-content: space-around;
+}
+
+.airbnb-logo{
+    margin-top: 9px !important;
+}
+
+.nasa-logo{
+    margin-top: 0px !important;
+}
+
+.uber-logo{
+    margin-top: 12px !important;
+}
+
+.target-logo{
+    margin-top: 4px;
+}
+
+.nav-transition-effect{
+        transform: translateY(-100px,10px);
+        transition: transform 1s ease-in-out;
+}
+
+.pos-fix{
+    position: fixed;
+    align-self: center;
+}
