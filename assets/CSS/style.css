@@ -57,12 +57,12 @@ nav {
     width: 200px;
 }
 
-#nav-talk-to-sales {
+.nav-talk-to-sales {
     border-color: #611f69 !important;
     color: #611f69 !important;
 }
 
-#nav-talk-to-sales:hover {
+.nav-talk-to-sales:hover {
 
     border: 2px solid #611f69 !important;
 
@@ -150,8 +150,8 @@ div ul li a {
     box-shadow: 0 4px 40px rgba(0, 0, 0, .15) !important;
 }
 
-.shadow-effect{
-    
+.shadow-effect {
+
     /* box-shadow: 0 4px 40px rgba(0, 0, 0, .15) ; */
 }
 
@@ -170,15 +170,18 @@ ul li {
     /* transition-duration: 500ms; */
     /* transition-duration: 2s; */
     /* transition-property: margin-top, color; */
-    animation-timeline: scroll(block nearest);
+    /* animation-timeline: scroll(block nearest); */
     /* animation-timeline: linear; */
     /* animation-timeline: scroll(x self); */
     /* animation-timeline: scroll(inline root); */
-     transition: transform 0.8s ease-in-out;
+    transform: translateY(10px);
+    transition: transform 0.4s ease-in-out;
+    /* transition: transform 1s cubic-bezier(.165, .84, .44, 1); */
+
 
 }
 
-@keyframes myAnimation {
+/* @keyframes myAnimation {
     from {
         transform: translateY(-100px);
     }
@@ -187,67 +190,179 @@ ul li {
         transform: translateY(0px);
 
     }
-}
+} */
 
-.custom-bg-color{
+.custom-bg-color {
     background-color: #f4ede4 !important;
 }
 
-.custom-bg-purple{
-    background-color:#611f69 !important;
+.custom-bg-purple {
+    background-color: #611f69 !important;
 }
 
-.custom-border-purple{
+.custom-border-purple {
     border-color: #611f69 !important;
 }
 
-.custom-font-purple{
+.custom-font-purple {
     color: #611f69;
 }
 
-.wd-25{
+.wd-25 {
     width: 25px;
 }
 
-.wd-30{
+.wd-30 {
     width: 30px;
 }
 
-#home-get-started-btn{
+#home-get-started-btn {
     color: white;
     padding: 10px;
 }
 
-.slack-free-try{
-    margin-top: 16px; margin-bottom: 0px;color: black;
+.slack-free-try {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    color: black;
 }
 
-.content-space-around{
+.content-space-around {
     justify-content: space-around;
 }
 
-.airbnb-logo{
+.airbnb-logo {
     margin-top: 9px !important;
 }
 
-.nasa-logo{
+.nasa-logo {
     margin-top: 0px !important;
 }
 
-.uber-logo{
+.uber-logo {
     margin-top: 12px !important;
 }
 
-.target-logo{
+.target-logo {
     margin-top: 4px;
 }
 
-.nav-transition-effect{
-        transform: translateY(-100px,10px);
-        transition: transform 1s ease-in-out;
+.nav-transition-effect {
+    transform: translateY(-100px, 10px);
+    transition: transform 1s ease-in-out;
+    
 }
 
-.pos-fix{
+.pos-fix {
     position: fixed;
     align-self: center;
+}
+
+.bold-font-slack {
+    font-weight: 700;
+}
+
+.font-for-slack {
+    font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif !important;
+}
+
+.font-size-46 {
+    font-size: 46px;
+}
+
+.content-bold-font {
+    font-weight: 700;
+    font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 46px;
+    word-spacing: -5px;
+
+}
+
+.content-font {
+    font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.home-meet-slack-for-enterprise {
+    color: white;
+    padding: 10px;
+}
+
+.font-size-70 {
+    font-size: 70px;
+}
+
+.sec-6 {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-grid-rows-3 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.teams-large-and-small {
+    margin: 100px auto 7px auto
+}
+
+.nav-talk-to-sales-bottom {
+    display: inline;
+    padding: 19.5px;
+    margin-bottom: 0cap;
+}
+
+.sec-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 78rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
+
+.custom-grid-rows-2 {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin-right: 125px;
+}
+
+.eight-five-percentage {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.card:hover {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
+    transform: scale(1.05);
+    transition: transform 420ms cubic-bezier(.165, .84, .44, 1);
+}
+
+.font-size-33 {
+    font-size: 33px;
+}
+
+.card-shadow {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+}
+
+.footer-headings {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-content {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.negative-position{
+    transform-origin: -100px !important;
 }
