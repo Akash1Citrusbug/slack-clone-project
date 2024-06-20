@@ -21,18 +21,21 @@
 
 
 
-// StackOverflow - code reference (not working) - method 4
+// StackOverflow - code reference (working) - method 4
 var element = document.getElementById("main-nav-div");
 // element.classList.add("sticky-top");
 $(document).ready(function () {
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 100) {
+        if ($(document).scrollTop() > 200) {
+            $(element).addClass("negative-position", { duration: 500 });
             $(element).addClass("sticky-top", { duration: 500 });
             $(element).addClass("animation-for-navbar", { duration: 500 });
             // $(element).addClass("shadow-effect", { duration: 500 });
         } else {
             $(element).removeClass("sticky-top", { duration: 500 });
             $(element).removeClass("animation-for-navbar", { duration: 500 });
+            $(element).removeClass("negative-position", { duration: 500 });
+            
             // $(element).removeClass("shadow-effect", { duration: 500 });
         }
     });
